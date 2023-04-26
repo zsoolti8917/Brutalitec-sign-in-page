@@ -2,93 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" description="Zsolt Varjú">
-    <meta name="description" content="Odin project sign-up">
-    <meta name="keywords" content="Odin, project, sign-up">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
-    <script src="main.js" type="module"></script>
-    <title>Brutalitec</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" description="Zsolt Varjú">
+	<meta name="description" content="Odin project sign-up">
+	<meta name="keywords" content="Odin, project, sign-up">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favicon.ico">
+	<script src="https://kit.fontawesome.com/faf7415ea6.js" crossorigin="anonymous"></script>
+	<script src="main.js" type="module"></script>
+	<title>Brutalitec</title>
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <!-- Left side starts here -->
-            <div class="left">
-                <div class="left__header">
-                    <h1>Brutalitec</h1>
-                </div>
-                <div class="left__footer">
-                    <p>Photo by Argus Banzerson on Unsplash</p>
-                </div>
-            </div>
-            <!-- Left side ends here -->
+	<main>
+		<div class="container">
+			<!-- Left side starts here -->
+			<div class="left">
+				<div class="left__header">
+					<h1>Brutalitec</h1>
+				</div>
+				<div class="left__footer">
+					<p>Photo by Argus Banzerson on Unsplash</p>
+				</div>
+			</div>
+			<!-- Left side ends here -->
 
-            <!-- Right side starts here -->
-            <div class="right">
-                <div class="right__top">
-                    <div class="right__top-content">
-                        <p>This is not a real online service! You know you need something like this in your life to help
-                            you
-                            realize your deepest dreams. Sign up now to get started.</p>
-                        <p>You know you want to</p>
-                    </div>
-                </div>
+			<!-- Right side starts here -->
+			<div class="right">
+				<div class="right__top">
+					<div class="right__top-content">
+						<p>This is not a real online service! You know you need something like this in your life to help
+							you
+							realize your deepest dreams. <br> Sign up now to get started.</p>
+						<p>You know you want to</p>
+					</div>
+				</div>
 
-                <div class="right__middle">
-                    <p class="right__middle-title"> Let's do this</p>
-                    <form action="index.html" method="post" class="signup-form">
-                        <div class="inputs">
-                            <label for="firstName">First name</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="Enter your first name"
-                                required>
-                        </div>
-                        <div class="inputs">
-                            <label for="lastName">Last name</label>
-                            <input type="text" name="lastName" id="lastName" placeholder="Enter your last name"
-                                required>
-                        </div>
-                        <div class="inputs">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="inputs">
-                            <label for="phoneNumber">Email</label>
-                            <input type="number" name="phoneNumber" id="phoneNumber"
-                                placeholder="Enter your phone number" required>
-                        </div>
-                        <div class="inputs">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="Enter your password"
-                                required>
-                        </div>
-                        <div class="inputs">
-                            <label for="password2">Confirm password</label>
-                            <input type="password" name="password2" id="password2" placeholder="Confirm your password"
-                                required>
-                    </form>
-                </div>
+				<div class="right__middle">
+					<p class="right__middle-title"> Let's do this</p>
+					<form class="signup-form" id="signup-form">
+						<div class="inputs">
+							<label for="firstName">First name</label>
+							<input type="text" name="firstName" id="firstName" placeholder="Enter your first name">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+						</div>
+						<div class="inputs">
+							<label for="lastName">Last name</label>
+							<input type="text" name="lastName" id="lastName" placeholder="Enter your last name">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
 
-                
-            </div>
-            <div class="right__bottom">
-                <div class="right__bottom-content">
-                    <button class="button">Create account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
-            </div>
-            
-        </div>
+						</div>
+						<div class="inputs">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" placeholder="Enter your email">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
 
-<!-- Right side ends here -->
+						</div>
+						<div class="inputs">
+							<label for="phoneNumber">Phone number</label>
+							<input type="number" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+							
+						</div>
+						<div class="inputs">
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" placeholder="Enter your password">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+
+						</div>
+						<div class="inputs">
+							<label for="password2">Confirm password</label>
+							<input type="password" name="password2" id="password2" placeholder="Confirm your password">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+
+					</form>
+				</div>
+
+
+			</div>
+			<div class="right__bottom">
+				<div class="right__bottom-content">
+					<button class="button" type="submit" form="signup-form">Create account</button>
+					<p>Already have an account? <a href="#">Log in</a></p>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Right side ends here -->
 
 
 
-    </main>
+	</main>
 </body>
 
 </html>
