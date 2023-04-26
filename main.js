@@ -57,6 +57,8 @@ function checkEmail(emailValue){
 function checkPhoneNumber(phoneNumberValue){
     if(phoneNumberValue === ""){
         setErrorFor(phoneNumber, "Phone Number cannot be blank");
+    }else if(!isPhone(phoneNumberValue)){
+        setErrorFor(phoneNumber, "Not a valid phone number");
     }else{
         setSuccessFor(phoneNumber);
     }
@@ -81,7 +83,13 @@ function checkPassword2(passwordValue, password2Value){
 }
 
 function isEmail(email){
-    return /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(email);
+ 
+ 
+   return /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(email);
+}
+
+function isPhone(phoneNumber){
+    return /^\d{10}$/.test(phoneNumber);
 }
 
 function setErrorFor(input, message){    
